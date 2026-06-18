@@ -1,6 +1,5 @@
 #include "mod.h"
 
-int mod(int x, int y)
-{
-	return 0;
+int mod(int x, int y) {
+    return x % y;
 }
