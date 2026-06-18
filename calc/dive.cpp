@@ -1,5 +1,13 @@
-#include "dive.h"
-int div(int x, int y) {
-    if (y == 0) return 0; 
-    return x / y;
+#include "sub.h"
+
+int dive(int x, int y)
+{
+    int cnt = 0;
+    while (x > y)
+    {
+        cnt++;
+        x = sub(x, y);
+    }
+
+    return cnt;
 }
